@@ -330,7 +330,7 @@ class TreeExplainer(Explainer):
 
         return X, y, X_missing, flat_output, tree_limit, check_additivity
 
-    def shap_values(self, X, y=None, tree_limit=None, approximate=False, check_additivity=True, from_call=False):
+    def shap_values(self, X, y=None, tree_limit=None, approximate=False, check_additivity=False, from_call=False):
         """ Estimate the SHAP values for a set of samples.
 
         Parameters
